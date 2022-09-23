@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/app/css/style.css">
+    <title>Gulp template</title>
+<body>
+  <body>
+    <h1>Receptai</h1>
+    <div class="right-col">
+        <h5> Gamink su muzika!</h5>
+        <img class="png" src="/app/click.png" id="icons">
+    </div>
+    <audio id="mySongs">
+        <source src="/app/lunch.mp3" type="audio/mp3">
+    </audio>
+    <div class="buttons">
+        <button onclick="showTab(event, 'pirmas')">Pusryčiai</button>
+        <button onclick="showTab(event, 'antras')">Pietūs</button>
+        <button onclick="showTab(event, 'trecias')">Vakarienė</button>
+    </div>
+
+    <div class="tabs">
+        <div id="pirmas" class="tab">
+            <img  src="/app/breakfast.jpg" alt="Pusryčiai">
+            <ol>
+              <li>1 šaldytas bananas </li>
+              <li>Chia sėklų</li>
+              <li>1/3 puodelio šaldytų braškių</li>
+              <li>1/3 puodelio kokosų pieno</li>
+              <li>1 arbatinis šaukštelis klevo sirupo</li>
+              <li>1/2 puodelio savo granolos pasirinkimo</li>
+             
+            </ol>
+            <p>Sudėkite į trintuvą pagrindinius ingredientus: šaldytą bananą, šaldytas braškes, kokosų pieną. <br> Trinkite iki vientisos masės. <br> Sudėkite gautą konsistenciją į dubenį. <br> Nepamirškite papuošti dubenėlio su papildomais ingredientais, taip suteiksite patiekalui ne tik grožio, bet ir praturtinsite naudingomis medžiagomis. </p>
+        </div>
+        <div id="antras" class="tab">
+            <img src="/app/lunch.jpg"
+                    alt="Pietūs">
+                    <ol>
+                        <li>1 svogūnas</li>
+                        <li>100 g tagliatele makaronų</li>
+                        <li>50 g pievagrybių arba baravykų</li>
+                        <li>50 ml grietinėlės 10-15% rieb.</li>
+                        <li>50 ml balto nealkoholinio vyno</li>
+                        <li>50 g brie sūrio</li>
+                        <li>sauja špinatų</li>
+                        <li>šiek tiek druskos ir pipirų</li>
+                      </ol>
+            <p>Keptuvėje ant aliejaus pakepti smulkintą svogūną (apie 2 min.). <br>
+                Suberti griežinėliais pjaustytus grybus ir pakepti dar 2 min. <br>
+                Supilti vyną ir patroškinti 3-4 min, kol vynas nugaruos, ir tada supilti grietinėlę. <br>
+                Tuo tarpu pasūdytame vandenyje išvirti makaronus. 
+                Į padažą suberti išvirtus makaronus, supilti apie 100ml vandens, kuriame virė makaronai. Dar įdėti saują špinatų, kubeliais pjaustytą brie sūrį, pagardinti druska, pipirais. Kaitinant maišyti apie 2 min, kol padažas sutirštės.</p>
+        </div>
+        <div id="trecias" class="tab">
+           
+            <img src="app/dinner.jpg" alt="Vakarienė">
+            <ol>
+                <li>4 vnt. sumuštinių duonos</li>
+                <li>150 g kopūstų</li>
+                <li>1 vnt. kiaušinio</li>
+                <li>pusę morkos</li>
+                <li>1/4 svogūno</li>
+                <li>2 šaukšteliai pomidorų padažo</li>
+                <li>1/4 šaukštelio druskos</li>
+              </ol>
+              
+            <p>	Duonos riekeles apkepti iš abiejų pusių sausoje keptuvėje. <br> Kopūstą supjaustyti kuo siauresniais, mažais ruoželiais. Morką supjaustyti plonais šiaudeliais.  Svogūną smulkiai sukapoti. Viską išmaišyti. <br>Pabarstyti druska ir paminkyti rankomis, kad kopūstai šiek tiek suminkštėtų. <br> Įmušti kiaušinį ir mentele formuoti blyną, kad būtų kvadratinis, maždaug tokio dydžio, kaip duonos riekė. <br> Ant duonos riekės dėti kiaušinį, aptepti pomidorų padažu ir užvožti kitą riekelę.</p>
+            
+        </div>
+
+    </div>
+    
+    <script src="gulpfile.js"></script>
+</body>
+</html>
